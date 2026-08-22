@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Janeiro | Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar">
+       <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/teu-logo.png" alt="João Janeiro Logo" class="logo" onerror="this.style.display='none';">
+                <span class="logo-joao"><span>João&nbsp;</span></span><span class="logo-text">Janeiro</span><span class="logo-r">®</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#works">Works</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+ <!-- VÍDEO INTRODUTÓRIO (90% da altura) -->
+    <header id="home" class="hero-section">
+        <!-- Removi o 'loop' e adicionei o id="intro-video" -->
+        <video id="intro-video" autoplay muted playsinline class="hero-video">
+            <source src="assets/video_sobe.mp4" type="video/mp4">
+            O teu browser não suporta vídeos.
+        </video>
+    </header>
+
+    <!-- SECÇÃO DE TRABALHOS -->
+    <main id="works" class="works-section">
+        <h1 class="section-title">Selected Works</h1>
+        
+        <div class="portfolio-grid">
+
+               <!-- Pedir para injetar html através do js!! -->
+            <!-- PROJETO 1 -->
+        <!-- PROJETO 1 -->
+            <div class="project-card" onclick="openProject('assets/preview1.mp4', 'Porto vinyl market', '2025', 'Project developed for Porto Vinyl Market using Blender and Illustrator')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb1.jpg" alt="Projeto 1" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Porto Vinyl</span>
+                        <span>Market</span>
+                    </div>
+                    <div class="info-right">
+                        <span>Event</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div class="project-card" onclick="openProject('assets/preview2.mp4', 'Novas formas de pensar a escrita', '2024', 'Project developed to an event about creative writing using Cavalry.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb2.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Novas formas</span>
+                        <span>de pensar a escrita </span>
+                    </div>
+                    <div class="info-right">
+                        <span>Event</span>
+                        <span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+               <!-- PROJETO 3 -->
+            <div class="project-card" onclick="openProject('assets/video3.mp4', 'World Coding Day', '2025', 'Project developed for an event about Creative Coding developed at FEUP (Engineer Faculty of University of Porto) using After Effects and Newton AE Script.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb3.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>World Coding</span>
+                        <span>Day</span>
+                    </div>
+                    <div class="info-right">
+                        <span>EVENT</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+               <!-- PROJETO 4 -->
+            <div class="project-card" onclick="openProject('assets/preview4.mp4', 'Lectures on Perfomance Art — Kinetic Dialogues', '2025', 'Project developed for a lecture about Performative Art made with Illustrator and Blender.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb4.png" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span> LEctures on perfomance Art</span>
+                        <span> Kinetic Dialogues</span>
+                    </div>
+                    <div class="info-right">
+                        <span>Event</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+              <!-- PROJETO 5 -->
+            <div class="project-card" onclick="openProject(['assets/video5.mp4', 'assets/another.mp4'], 'Make your life more playful', '2026', 'Project developed for a campaign about joyness in life made with Blender and Adobe Premiere.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb5.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span> Make your life</span>
+                        <span>more playful</span>
+                    </div>
+                    <div class="info-right">
+                        <span>campaign</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+            </div>
+
+
+              <!-- PROJETO 7 -->
+            <div class="project-card" onclick="openProject(['assets/video7.mp4', 'assets/fash1.png', 'assets/fash2.png', 'assets/fash3.png', 'assets/fash4.png', 'assets/fash5.png', 'assets/fash6.png', 'assets/fash7.png', 'assets/fash8.png', 'assets/fash9.png'], 'Environment Instagram Posts', '2026', 'Project developed for a campaign about environment for Rotaract using After Effects and Adobe Illustrator.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb7.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview7.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Environment</span>
+                        <span>Instagram posts</span>
+                    </div>
+                    <div class="info-right">
+                        <span>Campaign</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PROJETO 8 -->
+            <div class="project-card" onclick="openProject(['assets/video8.mp4', 'assets/abril1.png', 'assets/abril2.png', 'assets/abril3.png'], 'Ceia para pensar a liberdade', '2026', 'Project developed for a lecture about democracy in Portugal made with Blender and Adobe Illustrator.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb8.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview8.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Conversas para pensar</span>
+                        <span>a liberdade</span>
+                    </div>
+                    <div class="info-right">
+                        <span>EVent</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PROJETO 9 -->
+            <div class="project-card" onclick="openProject('assets/video9.mp4', 'Architecture Talks — On Site', '2025', 'Project developed for a lecture about Architecture research projects made with Blender and Adobe Illustrator.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb9.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview9.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Architecture talks</span>
+                        <span>//on site</span>
+                    </div>
+                    <div class="info-right">
+                        <span>event</span>
+                        <span>2025</span>
+                    </div>
+                </div>   
+            </div>
+
+              <!-- PROJETO 10 -->
+            <div class="project-card" onclick="openProject('assets/video10.mp4', 'Histórias da resistência', '2024', 'Project developed for an exposition about politic books in Portugal made with Blender and Adobe Illustrator.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb10.png" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview10.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>histórias</span>
+                        <span>da resistência</span>
+                    </div>
+                    <div class="info-right">
+                        <span>Exposition</span>
+                        <span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+               <!-- PROJETO 11 -->
+            <div class="project-card" onclick="openProject(['assets/video11.mp4', 'assets/extra11.mp4'], 'Visual Experiments', '2026', 'Visual experiments using geometry nodes in Blender.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb11.png" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview11.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>visual experiments</span>
+                    </div>
+                    <div class="info-right">
+                        <span>personal</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+              </div>
+
+                <!-- PROJETO 12 -->
+            <div class="project-card" onclick="openProject(['assets/f.mp4', 'assets/e.mp4', 'assets/d.mp4', 'assets/c.mp4', 'assets/b.mp4', 'assets/a.mp4'], 'Rotaract Talks', '2025', 'Posts designed for a Rotaract University of Porto event about Climate Changes.')">
+                <div class="thumbnail-container">
+                    <img src="assets/preview12.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview12.jpg" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>rotaract talks</span>
+                        <span>— Sustentabilidade</span>
+                    </div>
+                    <div class="info-right">
+                        <span>event</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PROJETO 6 -->
+            <div class="project-card" onclick="openProject('assets/video6.mp4', 'Working to live or living to work?', '2025', 'Project developed for a campaign about joyness in life made with After Effects and Newton AE Script')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb6.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Working to live</span>
+                        <span>Or living to work?</span>
+                    </div>
+                    <div class="info-right">
+                        <span>campaign</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+            
+
+        <!-- PROJETO 13 -->
+            <div class="project-card" onclick="openProject('assets/video12.mp4', 'Christmas Animation Campaign for Uporto Press', '2025', 'Project developed for a promotional campaign for the Uporto Press Publisher frame to frame drawn with Adobe Photoshop.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb13.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/video12.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Christmas animation</span>
+                        <span>Campaign for UPorto Press 2</span>
+                    </div>
+                    <div class="info-right">
+                        <span>campaign</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 13 -->
+            <div class="project-card" onclick="openProject('assets/video13.mp4', 'Christmas Animation Campaign for Uporto Press', '2024', 'Project developed for a promotional campaign for the Uporto Press Publisher frame to frame drawn with Adobe Photoshop.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb14.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/preview13.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Christmas animation</span>
+                        <span>Campaign for UPorto Press 2</span>
+                    </div>
+                    <div class="info-right">
+                        <span>campaign</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 14 -->
+            <div class="project-card" onclick="openProject('assets/video15.mp4', 'Swign', '2026', 'Personal project frame to frame drawn with Adobe Photoshop.')">
+                <div class="thumbnail-container">
+                    <img src="assets/thumb15.jpg" alt="Projeto 2" class="thumb-img">
+                    <video muted loop playsinline class="thumb-video">
+                        <source src="assets/video15.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+                <!-- TEXTO baixo -->
+                <div class="project-info">
+                    <div class="info-left">
+                        <span>Swing</span>
+                    </div>
+                    <div class="info-right">
+                        <span>2026</span>
+                    </div>
+                </div>
+            </div>
+            
+
+      
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 João Janeiro. Selected works showcased for portfolio purposes. | Website optimized for desktop. </p>
+    </footer>
+
+  <!-- MODAL (Janela que abre o vídeo completo do projeto) -->
+    <div id="project-modal" class="modal">
+        <span class="close-modal" onclick="closeProject()">&times; Close</span>
+        
+        <div class="modal-content">
+            <!-- Lado Esquerdo: Área do Carrossel (Setas + Media) -->
+            <!-- Lado Esquerdo: Área do Carrossel -->
+            <div class="modal-media-wrapper">
+                <button id="prev-btn" class="carousel-btn prev" onclick="changeMedia(-1)">prev</button>
+                
+                <div id="modal-media-container" class="modal-video-container">
+                    <!-- Vídeo/Foto via JS -->
+                </div>
+                
+                <button id="next-btn" class="carousel-btn next" onclick="changeMedia(1)">next</button>
+            </div>
+            
+            <!-- Lado Direito: Informações -->
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-year" class="modal-year"></p>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="custom-cursor">View More</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
