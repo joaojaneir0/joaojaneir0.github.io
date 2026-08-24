@@ -104,18 +104,17 @@ function openProject(media, title, year, desc) {
     const modalYear = document.getElementById('modal-year');
     const modalDesc = document.getElementById('modal-desc');
 
-    // Se o ficheiro vier sozinho, converte para lista. Assim não estraga os teus projetos antigos!
     currentMediaList = Array.isArray(media) ? media : [media];
     currentMediaIndex = 0;
 
     modalTitle.innerText = title;
     modalYear.innerText = year;
-    modalDesc.innerText = desc;
+    // ↓ MUDA ESTA LINHA DE innerText PARA innerHTML ↓
+    modalDesc.innerHTML = desc;
 
     renderMedia(currentMediaIndex);
     modal.style.display = 'block';
 }
-
 function renderMedia(index) {
     const container = document.getElementById('modal-media-container');
     const prevBtn = document.getElementById('prev-btn');
@@ -257,7 +256,7 @@ if (isAboutPage) {
         'assets/mouse2.png',
         'assets/mouse3.jpeg',
         'assets/mouse4.jpeg',
-        'assets/mouse5.jpeg',
+        'assets/mouse5.jpg',
         'assets/mouse6.jpeg',
         'assets/mouse7.jpeg',
         'assets/mouse8.png',
