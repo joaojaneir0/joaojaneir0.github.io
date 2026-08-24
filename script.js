@@ -256,7 +256,7 @@ if (isAboutPage) {
         'assets/mouse2.png',
         'assets/mouse3.jpeg',
         'assets/mouse4.jpeg',
-        'assets/mouse5.jpg',
+        'assets/mouse5.jpeg',
         'assets/mouse6.jpeg',
         'assets/mouse7.jpeg',
         'assets/mouse8.png',
